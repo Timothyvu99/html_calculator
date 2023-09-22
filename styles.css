@@ -1,0 +1,29 @@
+.calc_body {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-color: gold;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.calc_screen {
+    height: 50px;
+    width: 260px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.calc_button {
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    margin: 8px;
+    padding: 23px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
