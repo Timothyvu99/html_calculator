@@ -3,6 +3,7 @@ function calculate(x)
 {
     var string = document.getElementById('screen');
     string.value += x;
+
 }
 
 function clear()
