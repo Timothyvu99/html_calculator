@@ -6,33 +6,34 @@
 
     <body>
         <div class="calc_body">
-            <div class="calc_screen">
-                screen
+            <div>
+                <input type="text" id="screen" class="calc_screen">
             </div>
             <div>
-                <button type="button" class="calc_button" onclick="alert('7')">7</button>
-                <button type="button" class="calc_button">8</button>
-                <button type="button" class="calc_button">9</button>
-                <button type="button" class="calc_button" id="operation">+</button>
+                <button type="button" onclick="calculate('7')" class="calc_button">7</button>
+                <button type="button" onclick="calculate('8')" class="calc_button">8</button>
+                <button type="button" onclick="calculate('9')" class="calc_button">9</button>
+                <button type="button" onclick="calculate('+')" class="calc_button" id="operation">+</button>
             </div>
             <div>
-                <button type="button" class="calc_button">4</button>
-                <button type="button" class="calc_button">5</button>
-                <button type="button" class="calc_button">6</button>
-                <button type="button" class="calc_button" id="operation">-</button>
+                <button type="button" onclick="calculate('4')" class="calc_button">4</button>
+                <button type="button" onclick="calculate('5')" class="calc_button">5</button>
+                <button type="button" onclick="calculate('6')" class="calc_button">6</button>
+                <button type="button" onclick="calculate('-')" class="calc_button" id="operation">-</button>
             </div>
             <div>
-                <button type="button" class="calc_button">1</button>
-                <button type="button" class="calc_button">2</button>
-                <button type="button" class="calc_button">3</button>
-                <button type="button" class="calc_button" id="operation">x</button>
+                <button type="button" onclick="calculate('1')" class="calc_button">1</button>
+                <button type="button" onclick="calculate('2')" class="calc_button">2</button>
+                <button type="button" onclick="calculate('3')" class="calc_button">3</button>
+                <button type="button" onclick="calculate('*')" class="calc_button" id="operation">x</button>
             </div>
             <div>
-                <button type="button" class="calc_button" id="clear">C</button>
-                <button type="button" class="calc_button">0</button>
-                <button type="button" class="calc_button" id="operation">=</button>
-                <button type="button" class="calc_button" id="operation">/</button>
+                <button type="button" onclick="document.getElementById('screen').value = ''" class="calc_button" id="clear">C</button>
+                <button type="button" onclick="calculate('0')" class="calc_button">0</button>
+                <button type="button" onclick="equal()" class="calc_button" id="operation">=</button>
+                <button type="button" onclick="calculate('/')" class="calc_button" id="operation">/</button>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
