@@ -3,12 +3,8 @@ function calculate(x)
 {
     var string = document.getElementById('screen');
     string.value += x;
+    // string.querySelector('screen').value += x;
 
-}
-
-function clear()
-{
-    document.getElementById('screen').value = '';
 }
 
 function equal()
