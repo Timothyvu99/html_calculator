@@ -8,7 +8,10 @@ function calculate(x)
 function equal()
 {
     let solution = eval(document.getElementById('screen').value);
-    let result = document.getElementById('screen');
+    let string = document.getElementById('screen');
 
-    result.value = solution;
+    if(solution == "Infinity")
+        string.value = "Error";
+    else
+        string.value = solution;
 }
