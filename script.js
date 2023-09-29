@@ -10,7 +10,7 @@ function equal()
     let solution = eval(document.getElementById('screen').value);
     let string = document.getElementById('screen');
 
-    if(solution == "Infinity")
+    if(solution == "Infinity" || solution == "-Infinity")
         string.value = "Error";
     else
         string.value = solution;
