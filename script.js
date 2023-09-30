@@ -2,7 +2,10 @@
 function calculate(x)
 {
     let string = document.getElementById('screen');
-    string.value += x;
+    if(x == 'C')
+        string.value = '';
+    else
+        string.value += x;
 }
 
 function equal()
